@@ -30,7 +30,9 @@ jobs:
         run: npm install --legacy-peer-deps
 
       - name: Build
-        run: npx vite build --base=/Running/
+        run: |
+          npx vite build --base=/Running/
+          find dist -type f \( -name "*.js" -o -name "*.html" -o -name "*.css" \) -exec sed -i 's|"/src/assets|"/Running/src/assets|g; s|\x27/src/assets|\x27/Running/src/assets|g; s|`/src/assets|`/Running/src/assets|g' {} +
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
