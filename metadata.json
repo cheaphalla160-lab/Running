@@ -1,0 +1,8 @@
+{
+  "name": "Dr. Bunny's Run & Exercise Adventure",
+  "description": "An interactive elementary English vocabulary game where students help an animal doctor prepare gear, choose a route, and learn doctor, running, exercise, run up hills, and run down hills with cheerful music and a class leaderboard.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
